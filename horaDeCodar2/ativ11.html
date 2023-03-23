@@ -1,0 +1,39 @@
+<script>
+var operacao = parseInt(prompt("Qual operação será realizada? \n1. Adição 2. Subtração 3. Divisão 4. Multiplicação"));
+
+var numero1 = parseFloat(prompt("Digite um valor: "));
+var numero2 = parseFloat(prompt("Digite o segundo valor: "));
+var conta = 0;
+
+if (operacao === 1) {
+  adicao();
+} else if (operacao === 2) {
+  subtracao();
+} else if (operacao === 3) {
+  divisao();
+} else if (operacao === 4) {
+  multiplicacao();
+} else {
+  alert("Opção inválida");
+}
+
+function adicao() {
+  conta = numero1 + numero2;
+  alert("O resultado da soma é " + conta);
+}
+
+function subtracao() {
+  conta = numero1 - numero2;
+  alert("O resultado da subtração é " + conta);
+}
+
+function divisao() {
+  conta = numero1 / numero2;
+  alert("O resultado da divisão é " + conta);
+}
+
+function multiplicacao() {
+  conta = numero1 * numero2;
+  alert("O resultado da multiplicação é " + conta);
+}
+</script>

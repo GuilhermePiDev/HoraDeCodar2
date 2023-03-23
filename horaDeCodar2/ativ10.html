@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <script>
+        var sexo = parseInt(prompt("Informe seu Sexo (2 para homem) ou (1 para mulher)"));
+        var altura = parseFloat(prompt("Informe agora a sua altura (Ex:1.70)"));
+        var formula;
+
+        if (sexo === 1) {
+            formula = 62.1 * altura - 47.7;
+        } else if (sexo === 2) {
+            formula = 72.7 * altura - 58;
+        } else {
+            alert("ERRO ERRO !!! você não definiu o sexo");
+        }
+
+        alert("O seu peso ideal é " + formula);
+
+
+
+    </script>
